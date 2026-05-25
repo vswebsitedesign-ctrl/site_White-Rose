@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="" />
+
+<style>
+        body { margin: 0; font-family: sans-serif; background: #fff; color: #333; }
+        .hero { background: linear-gradient(to right, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.8) 80%), url("/assets/images/Mel.webp"); background-size: cover; background-position: center; min-height: 40vh; display: flex; justify-content: flex-end; align-items: center; color: white; padding: 20px 10%; }
+        .hero-content { max-width: 600px; text-align: right; }
+        .btn-call { background: #ffcc00; color: #002D62 !important; padding: 15px 25px; font-size: 1.4rem; font-weight: bold; text-decoration: none; display: inline-block; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .quick-qa { background: #002D62; color: white; padding: 30px 10%; text-align: center; }
+        .qa-grid { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .qa-card { background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; flex: 1; min-width: 220px; max-width: 320px; }
+        .qa-btn { background: #ffcc00; color: #002D62; display: inline-block; padding: 8px 20px; border-radius: 50px; font-weight: 900; text-transform: uppercase; font-size: 0.95rem; margin-bottom: 15px; }
+        .qa-card p { font-size: 0.95rem; margin: 0; font-weight: bold; line-height: 1.4; }
+        .cta-top { background: #f4f4f4; padding: 25px 10%; text-align: center; color: #002D62; }
+        .trust-banner { background: #eee; padding: 20px 5%; display: flex; align-items: center; justify-content: center; gap: 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+        .trust-col { width: 250px; color: #002D62; font-weight: 900; font-size: 0.95rem; text-transform: uppercase; line-height: 1.2; }
+        .trust-center { flex: 0 0 200px; text-align: center; color: #002D62; }
+        .trust-center img { width: 120px; height: auto; display: block; margin: 0 auto 5px auto; }
+        .comparison-container { display: flex; gap: 20px; justify-content: center; margin-top: 20px; }
+        .comparison-item { flex: 1; max-width: 500px; text-align: center; }
+        .comparison-item img { width: 100%; height: auto; border-radius: 8px; border: 4px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .comparison-item h3 { color: #002D62; text-transform: uppercase; margin: 10px 0 5px 0; }
+        .comparison-item p { font-style: italic; color: #666; margin: 0; }
+        @media (max-width: 768px) {
+            .hero { display: block; min-height: auto; padding: 0; background: none; }
+            .hero::before { content: ""; display: block; width: 100%; height: 180px; background: url("/assets/images/Mel.webp") no-repeat center; background-size: cover; }
+            .hero-content { background: #002D62; color: white; padding: 20px; text-align: center; }
+            .btn-call { width: 100%; box-sizing: border-box; }
+            .trust-banner { flex-direction: column; gap: 25px; text-align: center; padding: 30px 20px; }
+            .trust-col { text-align: center !important; width: 100%; }
+            .comparison-container { flex-direction: column; align-items: center; }
+        }
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "/#business",
+      "name": "White Rose House Clearance",
+      "url": "",
+      "telephone": "07881530713",
+      "priceRange": "££",
+      "image": "/assets/images/Mel.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Holme on Spalding Moor",
+        "addressLocality": "Holme on Spalding Moor",
+        "postalCode": "YO43",
+        "addressRegion": "Yorkshire",
+        "addressCountry": "GB"
+      },
+      "email": "info@whiterosehouseclearance.co.uk",
+      "description": "Professional house clearance services across Yorkshire. Fully licensed, compassionate and eco-friendly.",
+      "founder": { "@type": "Person", "name": "Mel" },
+      "foundingDate": "1995",
+      "areaServed": ["Leeds","York","Harrogate","Bradford","Wakefield","Hull","Sheffield","Yorkshire"],
+      "hasCredential": "Environment Agency Registered Waste Carrier (Upper Tier)",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "47",
+        "bestRating": "5"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Sarah T." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Mel and her team were fantastic — fast, professional and so compassionate during a difficult time."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "James W." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Same-day quote, cleared the full house within 48 hours. Excellent service across Yorkshire."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "",
+          "item": ""
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<div style="position: sticky; top: 0; background: #002D62; color: white; padding: 8px 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 9998; flex-wrap: wrap; gap: 10px;">
+  <a href="/" style="font-weight: bold; font-size: 1rem; color: white; text-decoration: none; white-space: nowrap;">White Rose House Clearance</a>
+  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <a href="/services/" style="color: white; text-decoration: none; font-size: 0.95rem; font-weight: 600;">Services</a>
+    <a href="/about-us/" style="color: white; text-decoration: none; font-size: 0.95rem; font-weight: 600;">About Us</a>
+    <a href="/contact/" style="color: white; text-decoration: none; font-size: 0.95rem; font-weight: 600;">Contact</a>
+    <a href="tel:07881530713" style="background: #ffcc00; color: #002D62; padding: 8px 16px; font-size: 0.9rem; text-decoration: none; border-radius: 5px; font-weight: bold; white-space: nowrap;">📞 Call Mel: 07881 530 713</a>
+  </div>
+</div>
+    <main>{{ content }}</main>
+
+    <footer style="background: #111; color: white; padding: 50px 10% 30px; text-align: center; font-size: 1rem; border-top: 4px solid #ffcc00;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h3 style="color: #ffcc00; font-size: 1.8rem; margin-bottom: 20px; text-transform: uppercase;">White Rose House Clearance</h3>
+            <p style="margin-bottom: 30px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
+    Professional, discreet, and environmentally responsible clearance services across Yorkshire. Fully licensed & committed to recycling.
+</p>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 40px; margin-bottom: 30px;">
+                <a href="/" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Home</a>
+                <a href="/about-us/" style="color: white; text-decoration: none;">About Us</a>
+                <a href="/contact/" style="color: white; text-decoration: none;">Contact</a>
+                <a href="/services/" style="color: white; text-decoration: none;">Services</a>
+                <a href="/privacy-policy/" style="color: white; text-decoration: none;">Privacy Policy</a>
+                <a href="/cookie-policy/" style="color: white; text-decoration: none;">Cookie Policy</a>
+                <a href="/recycling-reuse-policy/" style="color: white; text-decoration: none;">Recycling & Reuse Policy</a>
+            </div>
+
+            <p style="margin: 20px 0; font-size: 0.95rem;">
+                Call Mel today for a free quote:
+                <a href="tel:07881530713" style="color: #ffcc00; font-weight: bold; text-decoration: none;">07881 530 713</a>
+            </p>
+
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 20px;">
+                &copy;  White Rose House Clearance. All rights reserved.<br>
+                Environment Agency Registered Waste Carrier – Committed to sustainable disposal.
+            </p>
+        </div>
+        
+        <div style="text-align:center;padding:12px 0 4px;">
+      <a href="https://wa.me/447881530713" target="_blank" rel="noopener noreferrer"
+         style="display:inline-flex;align-items:center;gap:8px;background:#075e54;color:#ffffff;font-family:Arial,sans-serif;font-size:15px;font-weight:700;padding:10px 22px;border-radius:6px;text-decoration:none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+          <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.57A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.43l-.37-.22-3.69.93.99-3.6-.24-.38A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.44-7.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51H6.3c-.17 0-.45.06-.69.3-.23.23-.9.88-.9 2.14s.92 2.48 1.05 2.65c.13.17 1.82 2.78 4.41 3.9.62.27 1.1.43 1.47.55.62.2 1.18.17 1.62.1.5-.07 1.53-.62 1.75-1.23.22-.6.22-1.12.15-1.23-.07-.1-.27-.17-.57-.32z"/>
+        </svg>
+        Message Mel on WhatsApp
+      </a>
+    </div>
+    <div style="text-align:center;padding:12px 0 4px;">
+      <a href="https://www.facebook.com/whiterosehouseclearancemel/" target="_blank" rel="noopener noreferrer"
+         style="display:inline-flex;align-items:center;gap:8px;background:#1877F2;color:#fff;font-family:Arial,sans-serif;font-size:15px;font-weight:700;padding:10px 22px;border-radius:6px;text-decoration:none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+          <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+        Find us on Facebook
+      </a>
+    </div>
+</footer>
+<a href="tel:07881530713" style="position: fixed; bottom: 30px; right: 30px; background: #0d5c3d; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span style="font-size: 0.75rem; font-weight: bold; margin-top: 4px;">Mel</span></a>
+<style>
+@media (max-width: 768px) {
+  div[style*="position: sticky"][style*="top: 0"] { padding: 6px 10px !important; }
+  div[style*="position: sticky"] > div:first-child { font-size: 0.85rem !important; }
+  div[style*="position: sticky"] span { display: none !important; }
+  div[style*="position: sticky"] a[href^="tel"] { padding: 6px 12px !important; font-size: 0.85rem !important; }
+  a[href="tel:07881530713"][style*="position: fixed"] { width: 60px !important; height: 60px !important; bottom: 20px !important; right: 20px !important; }
+  a[href="tel:07881530713"][style*="position: fixed"] svg { width: 24px !important; height: 24px !important; }
+  a[href="tel:07881530713"][style*="position: fixed"] span { font-size: 0.65rem !important; }
+}
+</style>
+
+<!-- Sticky bottom-left contact button -->
+<a href="/contact/" target="_self" rel="noopener" aria-label="Contact Mel for a Free Quote"
+  style="position:fixed;bottom:24px;left:24px;z-index:9999;background:#002D62;color:#ffcc00;
+  border-radius:50px;padding:12px 20px;font-size:14px;font-weight:700;text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);display:flex;align-items:center;gap:8px;
+  font-family:sans-serif;line-height:1;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffcc00" viewBox="0 0 24 24">
+    <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.57A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.23-1.43l-.37-.22-3.69.93.99-3.6-.24-.38A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.44-7.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51H6.3c-.17 0-.45.06-.69.3-.23.23-.9.88-.9 2.14s.92 2.48 1.05 2.65c.13.17 1.82 2.78 4.41 3.9.62.27 1.1.43 1.47.55.62.2 1.18.17 1.62.1.5-.07 1.53-.62 1.75-1.23.22-.6.22-1.12.15-1.23-.07-.1-.27-.17-.57-.32z"/>
+  </svg>
+  Contact Mel for Free Quote
+</a>
+
+<!-- Exit intent pop-up -->
+<div id="exit-popup" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:12px;max-width:480px;width:90%;padding:36px 32px;position:relative;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+    <button onclick="closePopup()" aria-label="Close" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#666;">&times;</button>
+    <div style="font-size:36px;margin-bottom:8px;">🏠</div>
+    <h2 style="color:#002D62;font-size:22px;margin:0 0 8px;">Wait — Get Your Free Quote!</h2>
+    <p style="color:#444;font-size:15px;margin:0 0 24px;">Mel offers same-day quotes across Yorkshire. No obligation, no pressure — just fast, friendly advice.</p>
+    <a href="/contact/" style="display:block;background:#002D62;color:#ffcc00;font-weight:700;font-size:16px;padding:14px 24px;border-radius:8px;text-decoration:none;margin-bottom:12px;">Get My Free Quote →</a>
+    <a href="tel:07881530713" style="display:block;background:#0d5c3d;color:#fff;font-weight:700;font-size:16px;padding:14px 24px;border-radius:8px;text-decoration:none;margin-bottom:16px;">📞 Call Mel Today for Free Quote</a>
+    <button onclick="closePopup()" style="background:none;border:none;color:#999;font-size:13px;cursor:pointer;text-decoration:underline;">No thanks, I'll carry on browsing</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var shown = false;
+  var STORAGE_KEY = 'wr_popup_shown';
+
+  function showPopup() {
+    if (shown || sessionStorage.getItem(STORAGE_KEY)) return;
+    shown = true;
+    sessionStorage.setItem(STORAGE_KEY, '1');
+    var el = document.getElementById('exit-popup');
+    el.style.display = 'flex';
+  }
+
+  window.closePopup = function() {
+    document.getElementById('exit-popup').style.display = 'none';
+  };
+
+  // Timed trigger — 30 seconds
+  setTimeout(showPopup, 30000);
+
+  // Exit intent — mouse leaves window
+  document.addEventListener('mouseleave', function(e) {
+    if (e.clientY <= 0) showPopup();
+  });
+
+  // Close on backdrop click
+  document.getElementById('exit-popup').addEventListener('click', function(e) {
+    if (e.target === this) closePopup();
+  });
+})();
+</script>
+
+</body>
+</html>

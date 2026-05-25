@@ -1,0 +1,19 @@
+{% assign pairs = "White Rose House Clearance Before.webp,White Rose House Clearance After.webp|garage-clearance-before.webp,garage-clearance-after.webp|garage-rubbish-removal-before.webp,garage-rubbish-removal-after.webp|garden-path-clearance-before.webp,garden-path-clearance-after.webp|house-clearance-before.webp,house-clearance-after.webp|kitchen-clearance-before.webp,kitchen-clearance-after.webp|living-room-clearance-before.webp,living-room-clearance-after.webp|lounge-clearance-before.webp,lounge-clearance-after.webp|path-clearance-before.webp,path-clearance-after.webp|room-clearance-before.webp,room-clearance-after.webp|shed-clearance-before.webp,shed-clearance-after.webp|shed-rubbish-removal-before.webp,shed-rubbish-removal-after.webp|workshop-rubbish-removal-before.webp,workshop-rubbish-removal-after.webp" | split: "|" %}
+{% assign combined = page.slug | append: page.service %}{% assign idx = combined.size | modulo: 13 %}
+{% assign pair = pairs[idx] | split: "," %}
+<section style="padding:20px;background:#f9f9f9;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;">
+    <h2 style="margin-bottom:30px;font-size:1.6rem;">Before &amp; After</h2>
+    <div style="display:flex;gap:20px;justify-content:center;">
+      <div style="flex:1;">
+        <p style="font-weight:600;margin-bottom:8px;">Before</p>
+        <img src="/assets/images/{{ pair[0] }}" alt="Before {{ page.title }} - property cleared by White Rose" style="width:100%;border-radius:6px;" loading="lazy">
+      </div>
+      <div style="flex:1;">
+        <p style="font-weight:600;margin-bottom:8px;">After</p>
+        <img src="/assets/images/{{ pair[1] }}" alt="After {{ page.title }} - fully cleared by White Rose House Clearance" style="width:100%;border-radius:6px;" loading="lazy">
+      </div>
+    </div>
+    <p style="margin-top:14px;font-size:0.9rem;color:#555;">White Rose House Clearance — real results from a real {{ page.title }}.</p>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+{% assign loc = include.location_data %}
+
+<section style="padding: 30px 20px; background: #f4f4f4;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+        <h2 style="color: #002D62; text-align: center; margin-bottom: 20px;">Local Knowledge: {{ page.location | default: "Your Area" }}</h2>
+        
+        {% if loc and loc.local_description and loc.local_description != "" and loc.local_description != "null" %}
+            <div style="background: white; padding: 25px; border-radius: 8px; margin-bottom: 25px; text-align: left;">
+                <p style="line-height: 1.8; color: #333;">{{ loc.local_description | replace: "\n", "<br>" }}</p>
+            </div>
+        {% endif %}
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div>
+                <h3 style="color: #002D62;">Access & Parking</h3>
+                <p style="line-height: 1.6;">
+                    {% if loc and loc.local_description %}
+                        Based on our experience in {{ page.location }}, we plan clearances around local traffic patterns and parking availability.
+                    {% else %}
+                        Properties in {{ page.location | default: "this area" }} vary in access requirements. Our team surveys each clearance before work begins.
+                    {% endif %}
+                </p>
+                <h3 style="color: #002D62; margin-top: 20px;">Vehicle Strategy</h3>
+                <p style="line-height: 1.6;">We select the appropriate vehicle based on property location and access constraints.</p>
+            </div>
+            <div>
+                <h3 style="color: #002D62;">Planning Approach</h3>
+                <p style="line-height: 1.6;">Each clearance is planned around local traffic patterns, parking availability, and property access points.</p>
+                <h3 style="color: #002D62; margin-top: 20px;">Difficult Access</h3>
+                <p style="line-height: 1.6;">For properties with restricted access, we use smaller vehicles and manual transfer methods to complete the clearance efficiently.</p>
+            </div>
+        </div>
+    </div>
+</section>

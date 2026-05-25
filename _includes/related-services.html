@@ -1,0 +1,17 @@
+{% assign all_services = "house-clearance,probate-clearance,bereavement-clearance,hoarder-clearance,garage-clearance,loft-clearance,end-of-tenancy-clearance,commercial-clearance" | split: "," %}
+{% assign all_labels = "House Clearance,Probate Clearance,Bereavement Clearance,Hoarder Clearance,Garage Clearance,Loft Clearance,End of Tenancy Clearance,Commercial Clearance" | split: "," %}
+{% assign current_service_slug = page.permalink | split: "/" | slice: 2, 1 | first %}
+{% assign loc_slug = page.slug %}
+<div style="background:#ffffff;padding:30px 20px;border-radius:12px;margin:30px auto;max-width:1000px;text-align:center;">
+  <h2 style="color:#002D62;margin-bottom:20px;">Related Clearance Services in {{ page.location }}</h2>
+  <p style="margin-bottom:25px;color:#555;">Many customers also require additional clearance services depending on property type and situation.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+    {% for svc in all_services %}
+      {% unless svc == current_service_slug %}
+        {% assign i = forloop.index0 %}
+        {% assign label = all_labels[i] %}
+        <a href="/services/{{ svc }}/{{ loc_slug }}/" style="padding:10px 16px;background:#f4f4f4;border-radius:50px;text-decoration:none;color:#002D62;border:1px solid #ddd;">{{ label }}</a>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>

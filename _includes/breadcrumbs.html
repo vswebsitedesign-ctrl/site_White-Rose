@@ -1,0 +1,14 @@
+{% assign crumbs = page.permalink | split: "/" %}
+{% assign service_slug = crumbs[2] %}
+{% assign service_label = service_slug | replace: "-", " " %}
+<nav style="padding: 10px 20px; background: #f4f4f4; font-size: 0.9rem;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <a href="/" style="color: #002D62; text-decoration: none;">Home</a>
+    <span style="margin: 0 6px; color: #888;">›</span>
+    <a href="/services/" style="color: #002D62; text-decoration: none;">Services</a>
+    <span style="margin: 0 6px; color: #888;">›</span>
+    <a href="/services/{{ service_slug }}/" style="color: #002D62; text-decoration: none;">{{ page.service_type_label }}</a>
+    <span style="margin: 0 6px; color: #888;">›</span>
+    <span style="color: #444;">{{ page.location }}</span>
+  </div>
+</nav>

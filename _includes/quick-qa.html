@@ -1,0 +1,12 @@
+{% assign qqa = site.data.service_content[page.service].quick_qa %}
+<section class="quick-qa">
+    <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Quick Answers</h2>
+    <div class="qa-grid">
+        {% for card in qqa.cards %}
+        <div class="qa-card">
+            <div class="qa-btn">{{ card.btn }}</div>
+            <p>{{ card.answer }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>

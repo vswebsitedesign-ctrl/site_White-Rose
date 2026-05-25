@@ -1,0 +1,13 @@
+{% assign faq = site.data.service_content[page.service].faq %}
+<div style="background: #ffffff; border: 2px solid #002D62; padding: 20px; border-radius: 12px; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h2 style="color: #002D62; text-align: center; margin-bottom: 15px;">Frequently Asked Questions</h2>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+        {% for item in faq.items %}
+        <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; text-align: center;">
+            <h3 style="color: #002D62; font-size: 0.95rem;">{{ item.q }}</h3>
+            <p style="color: #555; font-size: 0.8rem;">{{ item.a }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <p style="margin-top: 15px; text-align: center; font-size: 0.75rem; color: #666;">All clearances comply with environmental regulations.</p>
+</div>

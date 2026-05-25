@@ -1,0 +1,28 @@
+baseurl: ''
+collections:
+  pages:
+    output: true
+  services:
+    output: true
+    permalink: /services/:path/
+description: Professional house clearance services across Yorkshire. Fully licensed,
+  compassionate and eco-friendly. Call Mel on 07881 530 713.
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor
+- '*.sh'
+- '*.py'
+include:
+- .htaccess
+markdown: kramdown
+permalink: pretty
+plugins:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+primary_phone: 07931 476 744
+site_name: White-Rose
+title: White Rose House Clearance
+url: https://whiterosehouseclearance.co.uk

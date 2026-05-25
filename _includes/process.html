@@ -1,0 +1,14 @@
+{% assign process = site.data.service_content[page.service].process %}
+<div style="background: #f4f4f4; padding: 30px 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: 30px auto; max-width: 1000px;">
+    <h2 style="color: #002D62; text-align: center; margin-bottom: 25px;">Our Clearance Process</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 800px; margin: 0 auto;">
+        {% for step in process.steps %}
+        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <div style="background: #002D62; color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 8px; font-weight: bold;">{{ step.n }}</div>
+            <strong>{{ step.label }}</strong>
+            <p style="margin: 5px 0 0; color: #555; font-size: 0.8rem;">{{ step.detail }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <p style="margin-top: 20px; text-align: center; font-size: 0.8rem; color: #666;">Consistent in-house team with full compliance and documentation.</p>
+</div>

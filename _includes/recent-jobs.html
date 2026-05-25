@@ -1,0 +1,18 @@
+{% assign jobs = include.jobs %}
+{% if jobs and jobs.size > 0 %}
+<div style="background: #ffffff; border: 2px solid #002D62; padding: 20px; border-radius: 12px; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h2 style="color: #002D62; text-align: center; margin-bottom: 15px;">Recent Clearance Jobs</h2>
+    <div style="display: flex; flex-direction: column; gap: 15px;">
+        {% for job in jobs limit: 2 %}
+        <div style="background: #f4f4f4; padding: 15px; border-radius: 8px; text-align: center;">
+            <div style="font-weight: bold; margin-bottom: 8px; color: #002D62;">{{ job.location | default: "[LOCATION]" }}</div>
+            <div style="font-size: 0.85rem; margin-bottom: 5px;"><strong>Environment:</strong> {{ job.clearance_environment }}</div>
+            <div style="font-size: 0.85rem; margin-bottom: 5px;"><strong>Contents:</strong> {{ job.material_profile }}</div>
+            <div style="font-size: 0.8rem; color: #666;">Duration: {{ job.duration }} | Price: {{ job.price_range }}</div>
+            <div style="font-size: 0.75rem; color: #888; margin-top: 8px;">{{ job.operational_notes }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <p style="margin-top: 15px; text-align: center; font-size: 0.75rem; color: #666;">All clearances include sorting for reuse, donation, or recycling. Waste transfer notes provided.</p>
+</div>
+{% endif %}

@@ -1,0 +1,76 @@
+{% assign opener = site.data.intro.openers | sample %}
+{% assign experience = site.data.intro.experience | sample %}
+{% assign services = site.data.intro.services | sample %}
+{% assign compliance = site.data.intro.compliance | sample %}
+{% assign local = site.data.intro.local_bits | sample %}
+{% assign cta = site.data.intro.cta | sample %}
+
+{% assign service_term = service.name | default: "house clearance" %}
+{% if service.keywords %}
+  {% assign service_term = service.keywords | sample %}
+{% endif %}
+
+{% assign location_name = "your area" %}
+{% if location.name %}
+  {% assign location_name = location.name %}
+{% endif %}
+
+{% assign layouts = "a,b,c,d" | split: "," %}
+{% assign layout = layouts | sample %}
+
+{% assign parts = "" | split: "" %}
+
+{% if layout == "a" %}
+  {% assign parts = parts | push: opener | push: experience | push: services | push: local | push: compliance %}
+{% elsif layout == "b" %}
+  {% assign parts = parts | push: opener | push: services | push: experience | push: compliance | push: local %}
+{% elsif layout == "c" %}
+  {% assign parts = parts | push: opener | push: local | push: services | push: experience | push: compliance %}
+{% else %}
+  {% assign parts = parts | push: local | push: opener | push: services | push: experience | push: compliance %}
+{% endif %}
+
+{% assign max_remove = parts.size | minus: 3 %}
+{% if max_remove < 1 %}
+  {% assign max_remove = 1 %}
+{% endif %}
+
+{% assign remove_options = "1,2" | split: "," %}
+{% assign num_to_remove = remove_options | sample | plus: 0 %}
+
+{% if num_to_remove > max_remove %}
+  {% assign num_to_remove = max_remove %}
+{% endif %}
+
+{% assign indices = "" | split: "" %}
+{% for i in (0..parts.size-1) %}
+  {% assign indices = indices | push: i %}
+{% endfor %}
+
+{% assign remove_indices = indices | sample: num_to_remove %}
+
+{% assign final_parts = "" | split: "" %}
+
+{% for part in parts %}
+  {% unless remove_indices contains forloop.index0 %}
+    {% assign final_parts = final_parts | push: part %}
+  {% endunless %}
+{% endfor %}
+
+{% assign final_parts = final_parts | push: cta %}
+
+{% assign intro_text = final_parts | join: " "
+  | replace: "%SERVICE%", service_term
+  | replace: "%LOCATION%", location_name
+  | replace: "  ", " "
+  | replace: "  ", " "
+  | strip %}
+
+<section style="padding: 30px 20px; background: white;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <h2 style="margin-bottom: 20px;">{{ page.title }} — Local Experts You Can Trust</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+            {{ intro_text }}
+        </p>
+    </div>
+</section>

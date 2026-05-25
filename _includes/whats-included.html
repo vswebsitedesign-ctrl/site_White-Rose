@@ -1,0 +1,12 @@
+{% assign wi = site.data.service_content[page.service].whats_included %}
+<div style="background: #002D62; padding: 20px; border-radius: 12px; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h2 style="color: #ffcc00; text-align: center; margin-bottom: 15px;">{{ wi.title }}</h2>
+    <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+        {% for item in wi.items %}
+        <li style="margin-bottom: 12px; color: #ffffff; font-size: 0.85rem;">
+            <strong style="color: #ffcc00;">{{ item.label }}</strong> – {{ item.detail }}
+        </li>
+        {% endfor %}
+    </ul>
+    <p style="margin-top: 15px; text-align: center; font-size: 0.75rem; color: #ffcc00;">{{ wi.footer }}</p>
+</div>

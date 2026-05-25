@@ -1,0 +1,44 @@
+{% if page.lat and page.lng %}
+<section style="padding:30px 20px;background:white;">
+  <div style="max-width:1000px;margin:0 auto;text-align:center;">
+    <h2 style="color:#002D62;margin-bottom:20px;">Areas We Cover Near {{ page.location }}</h2>
+    <div id="nearby-locations" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+      <p style="color:#666;font-size:0.9rem;">Loading nearby areas...</p>
+    </div>
+    <p style="margin-top:20px;font-size:0.8rem;color:#666;">Each area has unique property characteristics. Call for specific advice about your location.</p>
+  </div>
+</section>
+<script>
+(function() {
+  var currentLat = {{ page.lat }};
+  var currentLng = {{ page.lng }};
+  var currentSlug = "{{ page.slug }}";
+  var serviceSlug = "{{ page.permalink | split: '/' | slice: 2, 1 | first }}";
+
+  fetch('/assets/data/locations.json')
+    .then(function(r) { return r.json(); })
+    .then(function(locations) {
+      var distances = locations
+        .filter(function(l) { return l.slug !== currentSlug && l.lat && l.lng; })
+        .map(function(l) {
+          var dLat = l.lat - currentLat;
+          var dLng = l.lng - currentLng;
+          return { location: l, dist: Math.sqrt(dLat*dLat + dLng*dLng) };
+        })
+        .sort(function(a, b) { return a.dist - b.dist; })
+        .slice(0, 12);
+
+      var html = distances.map(function(d) {
+        var l = d.location;
+        return '<a href="/services/' + serviceSlug + '/' + l.slug + '/" ' +
+          'style="display:block;background:#002D62;color:white;padding:10px 12px;border-radius:8px;text-decoration:none;font-size:0.9rem;text-align:center;font-weight:500;" ' +
+          'onmouseover="this.style.backgroundColor=\'#ffcc00\';this.style.color=\'#002D62\';" ' +
+          'onmouseout="this.style.backgroundColor=\'#002D62\';this.style.color=\'white\';">' +
+          l.location + ' (' + l.postcode + ')</a>';
+      }).join('');
+
+      document.getElementById('nearby-locations').innerHTML = html;
+    });
+})();
+</script>
+{% endif %}

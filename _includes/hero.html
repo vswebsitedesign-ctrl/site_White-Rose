@@ -1,0 +1,16 @@
+<div class="hero" style="min-height: 50vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/Mel.webp') center/cover; background-size: cover;">
+    <div class="hero-content" style="text-align: center; margin: 0 auto;">
+        <h1 style="color: white; font-size: 3rem;">Professional {{ page.title }}</h1>
+        {% if page.service_intro %}
+        <p style="color: white; font-size: 1.3rem;">{{ page.service_intro }}</p>
+        {% else %}
+        <p style="color: white; font-size: 1.3rem;">Mel serves {{ page.location | default: "Your Area" }} and surrounding areas across Yorkshire</p>
+        {% endif %}
+        <div style="display: flex; gap: 15px; justify-content: center; margin: 20px 0;">
+            <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px;">✓ Licensed & Insured</span>
+            <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px;">✓ Respectful Service</span>
+            <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px;">✓ Same/Next Day Available</span>
+        </div>
+        <a href="tel:07881530713" class="btn-call" style="margin-top: 20px;">📞 07881 530 713</a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div style="background: #f4f4f4; padding: 30px 20px; text-align: center; margin: 20px 0;">
+    <h2 style="color: #002D62;">Find Your Location</h2>
+    <input type="text" id="locationSearch" placeholder="Type your town or postcode..." style="padding: 10px; width: 300px; border: 2px solid #002D62; border-radius: 5px;">
+    <div id="searchResults" style="margin-top: 10px;"></div>
+</div>
+<script>
+const searchInput = document.getElementById('locationSearch');
+const resultsDiv = document.getElementById('searchResults');
+const locationsList = [
+    "York", "Leeds", "Sheffield", "Harrogate", "Bradford", "Wakefield", "Hull", "Doncaster"
+];
+if(searchInput){
+    searchInput.addEventListener('input', function(){
+        const val = this.value.toLowerCase();
+        if(val.length < 2){ resultsDiv.innerHTML = ''; return; }
+        const matches = locationsList.filter(l => l.toLowerCase().includes(val));
+        if(matches.length > 0){
+            resultsDiv.innerHTML = matches.map(m => `<div style="padding:8px; background:white; border:1px solid #ccc; cursor:pointer;" onclick="window.location.href='/services/house-clearance/${m.toLowerCase()}-' + (m==='York'?'yo1':m==='Leeds'?'ls1':m==='Sheffield'?'s1':m==='Harrogate'?'hg1':m==='Bradford'?'bd1':m==='Wakefield'?'wf1':m==='Hull'?'hu1':m==='Doncaster'?'dn1':'') + '/'">${m}</div>`).join('');
+        }
+    });
+}
+</script>
