@@ -23,6 +23,12 @@ def build():
             f.write(html)
     if os.path.exists('assets'):
         shutil.copytree('assets', 'build/assets', dirs_exist_ok=True)
+    # Copy server-side files to build root
+    for f in ['.htaccess', 'robots.txt', 'send-quote.php']:
+        src = os.path.join('assets', f)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join('build', f))
+            print(f"Copied {f} to build/")
     print(f"Built {len(pages)} pages")
 
 if __name__ == '__main__':
