@@ -35,7 +35,7 @@
   },
   "data_schema": {
     "pages.json": {
-      "total_pages": 49,
+      "total_pages": 4353,
       "slugs": [
         "cookie-policy",
         "privacy-policy",
@@ -246,6 +246,18 @@
     {
       "date": "2026-05-31",
       "change": "AUDIT: Master_Report_Full_Audit.json read from Jekyll root \u2014 documents 13 batches, 53 findings, all critical issues resolved as of 2026-05-08 in the Jekyll project. This work is not yet reflected in omni-builder."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "MIGRATION: 4304 location pages added to pages.json from Jekyll _site compiled HTML. Main content extracted via <main> tag. Zero missing HTML files."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "BUILD: Full build verified \u2014 4353 pages built, index.html at root confirmed, assets and CSS in build, service hub and location pages confirmed present."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "KNOWN ISSUE CONFIRMED: homepage_slug fix required after every build \u2014 cp build/index/index.html build/index.html"
     }
   ],
   "known_issues": {
@@ -298,44 +310,10 @@
     "recommended_method": "GitHub Actions + rsync over SSH as Plesk domain system user (not root) \u2014 see site_JKRS deploy.yml as reference implementation"
   },
   "content_status": {
-    "pages_built": [
-      "cookie-policy",
-      "privacy-policy",
-      "about-us",
-      "terms-and-conditions",
-      "services",
-      "contact",
-      "recycling-reuse-policy",
-      "structured-data",
-      "local-knowledge",
-      "why-choose",
-      "search-bar",
-      "intro_section",
-      "cta-bottom",
-      "limitations",
-      "before-after-gallery",
-      "location-map",
-      "quick-qa",
-      "pricing",
-      "faq",
-      "sensitive-clearances",
-      "hero",
-      "location-finder",
-      "sub-areas",
-      "related-services",
-      "whats-included",
-      "cost-factors",
-      "process",
-      "recent-jobs",
-      "breadcrumbs",
-      "service",
-      "service-test",
-      "page",
-      "index"
-    ],
+    "pages_built": "4353 \u2014 all location pages migrated",
     "base_html_status": "fixed (Jekyll tags removed, {{ content }} injected)",
     "assets_in_build": "unknown",
-    "last_build": "2026-05-25",
+    "last_build": "2026-05-31",
     "build_result": "SUCCESS",
     "jekyll_source": "/home/chubert/White-Rose/_site",
     "live_crawl": "Crawled 2026-05-25: 16 added, 8 updated from https://whiterosehouseclearance.co.uk",
