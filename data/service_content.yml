@@ -1,0 +1,906 @@
+house_clearance:
+  pricing:
+    intro: Typical costs based on property size and volume of items. Final price confirmed
+      after free assessment.
+    tiers:
+    - label: Single Room / Light Load
+      price: £150–£275
+      detail: Small clearance, few items
+    - label: Medium Property (2–3 bed)
+      price: £350–£600
+      detail: Full house clearance
+    - label: Large Property (4+ bed)
+      price: £600–£950
+      detail: Including loft and garage
+    - label: Single Bulky Items
+      price: £60–£130
+      detail: Per item (sofa, fridge, etc.)
+    includes: Labour, loading, transport, disposal, and waste transfer documentation
+    footer: Fixed pricing with no hidden charges. Call Mel for an exact quote.
+    factors:
+    - icon: 📦
+      label: Volume & Weight
+      detail: Larger volumes and heavier items require more time and resource
+    - icon: 🚪
+      label: Access Constraints
+      detail: Narrow streets, parking limitations, stairs, or restricted access
+    - icon: ⚠️
+      label: Disposal Requirements
+      detail: Specialist items or hazardous materials require separate handling
+    - icon: ⏱️
+      label: Urgency
+      detail: Same-day or next-day requests may affect scheduling
+  whats_included:
+    title: What's Included in a House Clearance
+    items:
+    - label: Removal of furniture and contents
+      detail: All rooms cleared — living areas, bedrooms, kitchen
+    - label: Appliance removal
+      detail: White goods and electrical items taken away
+    - label: Document and valuables check
+      detail: Basic check carried out before clearance begins
+    - label: Sorting of contents
+      detail: Reuse, donation, or recycling where possible
+    - label: Licensed waste disposal
+      detail: All waste removed via authorised channels
+    - label: Waste transfer documentation
+      detail: Compliance paperwork provided
+    - label: Final sweep
+      detail: Property left empty and swept through
+    footer: All work by consistent in-house team. No subcontracting.
+  faq:
+    items:
+    - q: How long does a house clearance take?
+      a: A typical 2-3 bed property takes half a day. Larger properties or those with
+        loft and garage contents may take a full day.
+    - q: Do I need to be present during the clearance?
+      a: No — key collection and remote access are both easily accommodated.
+    - q: What happens to the items removed?
+      a: Sorted for reuse, donation, recycling, or licensed disposal. We prioritise
+        reuse over landfill.
+    - q: Are you licensed and insured?
+      a: Yes. Environment Agency registered waste carrier with full public liability
+        insurance.
+  process:
+    steps:
+    - n: 1
+      label: Request a Quote
+      detail: Call or message Mel with details of the property and contents.
+    - n: 2
+      label: Receive Fixed Price
+      detail: A clear, no-obligation price confirmed after assessment.
+    - n: 3
+      label: Book a Date
+      detail: Choose a convenient date — often available within 48 hours.
+    - n: 4
+      label: Clearance Carried Out
+      detail: Mel and team clear the property efficiently and safely.
+    - n: 5
+      label: Items Sorted and Removed
+      detail: Separated for reuse, recycling, or licensed disposal.
+    - n: 6
+      label: Property Left Ready
+      detail: Empty and swept — ready for sale, rent, or handover.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — we handle full house clearances from single rooms to entire properties
+        including loft and garage contents.
+    - btn: How Much?
+      answer: From £150 for a light load up to £950 for a large property. Call Mel
+        for a free, fixed-price quote with no hidden charges.
+    - btn: When?
+      answer: Often within 48 hours. Same-day quotes available. Call Mel to discuss
+        your timeline.
+  sensitive_clearances:
+    variant: light
+    title: Sensitive Clearance Handling
+    intro: Some house clearances involve difficult circumstances. Mel handles every
+      job with care and discretion, whatever the situation.
+    items:
+    - label: Care & Discretion
+      detail: All items handled carefully and respectfully throughout.
+    - label: Valuables Check
+      detail: Basic check carried out before clearance begins.
+    - label: Flexible Access
+      detail: Key collection and remote access easily arranged.
+    - label: No Judgement
+      detail: Every situation treated with professionalism and respect.
+    footer: Consistent in-house team ensuring continuity and discretion.
+bereavement_clearance:
+  pricing:
+    intro: Sensitive pricing with no pressure. We work at your pace. Final price confirmed
+      after a compassionate assessment.
+    tiers:
+    - label: Single Room / Personal Effects
+      price: £200–£350
+      detail: Careful handling of personal belongings
+    - label: Medium Property (2–3 bed)
+      price: £400–£650
+      detail: Full clearance with keepsake separation
+    - label: Large Property (4+ bed)
+      price: £650–£950
+      detail: Full estate clearance, all rooms
+    - label: Remote / Key-Only Access
+      price: POA
+      detail: We can work without family present
+    includes: Labour, loading, transport, disposal, keepsake separation, and waste
+      transfer documentation
+    footer: No pressure. No rush. Call Mel for a sensitive, no-obligation quote.
+    factors:
+    - icon: 💛
+      label: Volume & Contents
+      detail: Larger properties with more contents take more time
+    - icon: 🔑
+      label: Access Arrangements
+      detail: Key collection and remote access options available
+    - icon: 📋
+      label: Valuables Check
+      detail: Time required to carefully check for documents and valuables
+    - icon: ⏱️
+      label: Urgency
+      detail: We accommodate probate and estate timelines where possible
+  whats_included:
+    title: What's Included in a Bereavement Clearance
+    items:
+    - label: Careful handling of all personal effects
+      detail: Every item treated with respect and discretion
+    - label: Keepsake and valuables separation
+      detail: Items set aside for family review before disposal
+    - label: Document check
+      detail: Thorough check for important paperwork and financial documents
+    - label: Coordination with family or representatives
+      detail: We follow your instructions and work at your pace
+    - label: Sorting for reuse and donation
+      detail: Clothing, furniture, and household items donated where possible
+    - label: Licensed waste disposal
+      detail: All remaining items removed via authorised channels
+    - label: Final sweep
+      detail: Property left empty and ready for next steps
+    footer: Consistent in-house team. No strangers in and out. Full discretion guaranteed.
+  faq:
+    items:
+    - q: Can you work while we are not present?
+      a: Yes — key collection and remote access are fully supported. You do not need
+        to be there.
+    - q: What happens to sentimental items and valuables?
+      a: All items are checked and set aside for family review before anything is
+        disposed of. Nothing is discarded without instruction.
+    - q: How quickly can you start?
+      a: Often within 48 hours of contact. We understand that timelines can be driven
+        by probate or property circumstances.
+    - q: Do you work with solicitors or estate agents?
+      a: Yes — we regularly coordinate with solicitors, executors, and estate agents
+        on behalf of families.
+  process:
+    steps:
+    - n: 1
+      label: Sensitive Initial Consultation
+      detail: Call Mel for a compassionate, no-pressure conversation about your needs.
+    - n: 2
+      label: Receive Fixed Price
+      detail: A clear, no-obligation quote provided at your own pace.
+    - n: 3
+      label: Arrange Access
+      detail: Key collection or remote access arranged — you do not need to be present.
+    - n: 4
+      label: Careful Clearance Carried Out
+      detail: Every item handled with discretion and respect throughout.
+    - n: 5
+      label: Keepsakes and Valuables Set Aside
+      detail: Items reviewed and separated before any disposal takes place.
+    - n: 6
+      label: Property Left Ready
+      detail: Empty and swept — ready for next steps at your own pace.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — we handle bereavement clearances with full discretion and care.
+        You do not need to be present.
+    - btn: How Much?
+      answer: From £200 for a single room up to £950 for a full estate. No pressure
+        — quote provided at your own pace.
+    - btn: When?
+      answer: We work to your timeline. Often available within 48 hours. Call Mel
+        for a compassionate, no-obligation conversation.
+  sensitive_clearances:
+    variant: full
+    title: Sensitive Clearance Handling
+    intro: Bereavement clearances require additional care, discretion, and coordination.
+      Mel handles every job with a structured and compassionate process.
+    items:
+    - label: Full Discretion
+      detail: Every item handled with care and respect. Nothing discarded without
+        instruction.
+    - label: Keepsake Separation
+      detail: Sentimental items and valuables set aside for family review before disposal.
+    - label: Working with Representatives
+      detail: Coordinate with solicitors, executors, and appointed family representatives.
+    - label: Remote Access Options
+      detail: Key collection, photo updates, and staged reporting available.
+    - label: No Rush
+      detail: We work at your pace — no pressure on timelines.
+    - label: Consistent Team
+      detail: Same team throughout — no strangers in and out of the property.
+    footer: Consistent in-house team ensuring continuity, care, and full discretion
+      throughout.
+hoarder_clearance:
+  pricing:
+    intro: High-volume clearance priced on volume and condition. No judgement — just
+      a clear, honest assessment.
+    tiers:
+    - label: Moderate — Accessible Property
+      price: £300–£600
+      detail: Manageable volume, good access
+    - label: Heavy — Restricted Movement
+      price: £600–£1,000
+      detail: Significant volume, limited access routes
+    - label: Severe — Multi-Room
+      price: £1,000–£1,500+
+      detail: Full property, possible multi-visit
+    - label: Biohazard / Specialist Handling
+      price: POA
+      detail: Additional equipment and disposal required
+    includes: Labour, loading, transport, specialist disposal where needed, and waste
+      transfer documentation
+    footer: Every hoarder clearance is unique. Call Mel for a discreet, no-obligation
+      assessment.
+    factors:
+    - icon: 📦
+      label: Volume & Density
+      detail: Compacted or floor-to-ceiling loads significantly increase time
+    - icon: 🚪
+      label: Access & Movement
+      detail: Restricted pathways require items to be moved in stages
+    - icon: ⚠️
+      label: Condition of Contents
+      detail: Organic matter, damp, or biohazard materials need specialist handling
+    - icon: 📅
+      label: Multi-Visit Option
+      detail: Some clearances are completed across multiple days
+  whats_included:
+    title: What's Included in a Hoarder Clearance
+    items:
+    - label: Non-judgemental assessment and approach
+      detail: We have seen everything — no situation is too difficult
+    - label: High-volume removal
+      detail: Floor-to-ceiling and compacted loads handled efficiently
+    - label: Biohazard awareness
+      detail: Organic matter, damp, and contaminated items handled appropriately
+    - label: Staged clearance option
+      detail: Multi-visit approach available if preferred
+    - label: Sorting of salvageable items
+      detail: Reusable and recyclable items separated where possible
+    - label: Licensed waste disposal
+      detail: All waste removed via authorised channels
+    - label: Final sweep
+      detail: Property left clear and accessible
+    footer: Discreet, respectful, and professional throughout. No judgement — ever.
+  faq:
+    items:
+    - q: Will you judge the state of the property?
+      a: Never. We have seen every situation imaginable and approach every clearance
+        with complete respect and professionalism.
+    - q: Can the clearance be done in stages?
+      a: Yes — a staged approach over multiple visits is available if preferred or
+        if the situation requires it.
+    - q: Do you handle biohazard or contaminated materials?
+      a: We are experienced with properties containing organic matter, damp, and contaminated
+        contents and handle these appropriately.
+    - q: How is the price calculated?
+      a: By volume and condition of contents. A no-obligation assessment is carried
+        out before any price is confirmed.
+  process:
+    steps:
+    - n: 1
+      label: No-Obligation Assessment
+      detail: Mel visits to assess volume and condition — no judgement, no pressure.
+    - n: 2
+      label: Honest Fixed Price
+      detail: A clear price based on actual volume and access conditions.
+    - n: 3
+      label: Agree Approach
+      detail: Single visit or staged multi-visit plan agreed based on your preference.
+    - n: 4
+      label: Clearance Begins
+      detail: High-volume removal carried out systematically and respectfully.
+    - n: 5
+      label: Items Sorted
+      detail: Salvageable items separated for reuse or recycling where possible.
+    - n: 6
+      label: Property Left Clear
+      detail: Space cleared and swept — accessible and ready for next use.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — no matter the scale or condition of the property. We have seen
+        everything and approach every job without judgement.
+    - btn: How Much?
+      answer: From £300 for manageable loads up to £1,500+ for severe multi-room clearances.
+        Assessed individually — call for a discreet quote.
+    - btn: When?
+      answer: Single visit or staged multi-visit approach available. Call Mel to discuss
+        what works best for your situation.
+  sensitive_clearances:
+    variant: full
+    title: Sensitive Clearance Handling
+    intro: Hoarder clearances require patience, discretion, and a non-judgemental
+      approach. Mel has extensive experience handling even the most challenging situations.
+    items:
+    - label: No Judgement — Ever
+      detail: Every property and situation treated with complete respect and professionalism.
+    - label: Biohazard Awareness
+      detail: Organic matter, damp, and contaminated contents handled appropriately.
+    - label: Staged Approach Available
+      detail: Multi-visit clearance plan available if preferred or required.
+    - label: Discreet Service
+      detail: Unmarked vehicles and discreet working available on request.
+    - label: Flexible Access
+      detail: Key collection and remote access easily arranged.
+    - label: Consistent Team
+      detail: Same team throughout for continuity and trust.
+    footer: Discreet, respectful, and professional throughout. No judgement — ever.
+commercial_clearance:
+  pricing:
+    intro: Priced by premises size and contents volume. Out-of-hours slots available
+      to minimise business disruption.
+    tiers:
+    - label: Small Office / Single Unit
+      price: £250–£500
+      detail: Desks, chairs, filing cabinets
+    - label: Medium Premises
+      price: £500–£1,000
+      detail: Multi-room office or retail unit
+    - label: Large Commercial Premises
+      price: £1,000–£2,000+
+      detail: Warehouse, large retail, or multi-floor
+    - label: IT Equipment & Data Disposal
+      price: POA
+      detail: Certified data destruction available
+    includes: Labour, loading, transport, commercial waste disposal, and waste transfer
+      documentation
+    footer: Out-of-hours and weekend slots available. Call Mel for a tailored commercial
+      quote.
+    factors:
+    - icon: 🏢
+      label: Premises Size
+      detail: Larger floor areas and more contents increase time and resource
+    - icon: 🖥️
+      label: IT & Equipment
+      detail: Electronic equipment requires certified disposal
+    - icon: 🌙
+      label: Out-of-Hours
+      detail: Evening and weekend slots available to avoid disruption
+    - icon: ⚠️
+      label: Confidential Waste
+      detail: Secure document disposal available on request
+  whats_included:
+    title: What's Included in a Commercial Clearance
+    items:
+    - label: Office furniture and fittings removal
+      detail: Desks, chairs, shelving, cabinets, and partitions
+    - label: IT and electronic equipment
+      detail: Computers, servers, and peripherals removed and disposed of correctly
+    - label: Confidential waste handling
+      detail: Secure document disposal available on request
+    - label: Retail fixtures and fittings
+      detail: Shelving, display units, and signage removed
+    - label: Licensed commercial waste disposal
+      detail: All waste removed via authorised commercial channels
+    - label: Waste transfer documentation
+      detail: Full compliance paperwork provided
+    - label: Out-of-hours availability
+      detail: Evening and weekend slots to minimise business disruption
+    footer: Fully compliant commercial waste disposal. Out-of-hours slots available.
+  faq:
+    items:
+    - q: Can you clear outside business hours?
+      a: Yes — evening and weekend slots are available to minimise disruption to your
+        business or neighbouring tenants.
+    - q: Do you handle IT equipment and data disposal?
+      a: Yes — computers, servers, and electronic equipment are removed and disposed
+        of correctly. Certified data destruction is available on request.
+    - q: Can you provide waste transfer documentation?
+      a: Yes — full compliance paperwork is provided for all commercial clearances.
+    - q: How quickly can a commercial clearance be completed?
+      a: Depending on premises size, most commercial clearances are completed within
+        one to two days. Contact Mel for a timeline based on your specific premises.
+  process:
+    steps:
+    - n: 1
+      label: Request a Commercial Quote
+      detail: Contact Mel with premises details, size, and contents to be cleared.
+    - n: 2
+      label: Site Assessment
+      detail: Mel assesses the premises and provides a tailored fixed price.
+    - n: 3
+      label: Schedule Out-of-Hours if Needed
+      detail: Evening or weekend slot booked to avoid business disruption.
+    - n: 4
+      label: Clearance Carried Out
+      detail: Furniture, equipment, and fittings removed efficiently.
+    - n: 5
+      label: Waste Sorted and Disposed
+      detail: Commercial waste removed via licensed channels with full documentation.
+    - n: 6
+      label: Premises Left Clear
+      detail: Empty and swept — ready for new tenants or refurbishment.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — offices, retail units, warehouses, and commercial premises of
+        all sizes. IT equipment and confidential waste handled correctly.
+    - btn: How Much?
+      answer: From £250 for a small office up to £2,000+ for large premises. Tailored
+        quote based on your specific premises and contents.
+    - btn: When?
+      answer: Out-of-hours and weekend slots available to avoid business disruption.
+        Call Mel to schedule around your operations.
+  sensitive_clearances:
+    variant: commercial
+    title: Confidential Waste & Data Security
+    intro: Commercial clearances often involve sensitive business information and
+      equipment. Mel handles confidential waste and data disposal with full compliance.
+    items:
+    - label: Confidential Document Disposal
+      detail: Secure destruction of sensitive business documents available on request.
+    - label: IT Equipment Disposal
+      detail: Computers, servers, and storage devices disposed of correctly.
+    - label: Data Security
+      detail: Certified data destruction available for storage devices and hardware.
+    - label: Discreet Service
+      detail: Out-of-hours working available to protect business confidentiality.
+    footer: Full compliance with commercial waste regulations. Documentation provided.
+probate_clearance:
+  pricing:
+    intro: Estate clearance priced sensitively and transparently. We liaise with solicitors
+      and executors directly.
+    tiers:
+    - label: Single Room / Partial Estate
+      price: £200–£350
+      detail: Partial clearance, specific rooms only
+    - label: Medium Property (2–3 bed)
+      price: £400–£650
+      detail: Full estate clearance
+    - label: Large Property (4+ bed)
+      price: £650–£950
+      detail: Full estate including outbuildings
+    - label: Solicitor / Executor Managed
+      price: POA
+      detail: Itemised reporting and documentation provided
+    includes: Labour, loading, transport, itemised removal log, disposal, and waste
+      transfer documentation
+    footer: We work directly with solicitors, executors, and family representatives.
+      Call for a sensitive quote.
+    factors:
+    - icon: 📋
+      label: Estate Size
+      detail: Larger estates with more contents require more time
+    - icon: 🔑
+      label: Access Arrangements
+      detail: We coordinate access with solicitors or appointed representatives
+    - icon: 📦
+      label: Itemised Reporting
+      detail: Detailed removal logs available for estate records
+    - icon: ⏱️
+      label: Probate Timeline
+      detail: We work within solicitor and court timelines where required
+  whats_included:
+    title: What's Included in a Probate Clearance
+    items:
+    - label: Full estate clearance
+      detail: All rooms, outbuildings, and storage areas cleared
+    - label: Itemised removal log
+      detail: Detailed record of items removed for estate records
+    - label: Valuables and document check
+      detail: Thorough check before any items are disposed of
+    - label: Solicitor and executor liaison
+      detail: We coordinate directly with appointed representatives
+    - label: Sorting for reuse and donation
+      detail: Items donated or recycled where possible
+    - label: Licensed waste disposal
+      detail: All remaining items removed via authorised channels
+    - label: Final sweep
+      detail: Property left empty and ready for sale or handover
+    footer: Full documentation provided for estate and legal records.
+  faq:
+    items:
+    - q: Can you liaise directly with our solicitor?
+      a: Yes — we regularly coordinate with solicitors, executors, and appointed representatives
+        throughout the clearance process.
+    - q: Do you provide an itemised removal log?
+      a: Yes — a detailed record of items removed can be provided for estate and legal
+        records.
+    - q: What happens to valuables and important documents?
+      a: A thorough check is carried out before any items are disposed of. All valuables
+        and documents are set aside for review.
+    - q: Can you work to a probate timeline?
+      a: Yes — we understand that probate and estate timelines are driven by legal
+        and court processes and work accordingly.
+  process:
+    steps:
+    - n: 1
+      label: Contact Mel or Your Solicitor
+      detail: We can be instructed directly or via your solicitor or executor.
+    - n: 2
+      label: Estate Assessment
+      detail: Mel assesses the property and provides a clear, fixed price.
+    - n: 3
+      label: Access Arranged
+      detail: Key collection or solicitor-managed access coordinated.
+    - n: 4
+      label: Careful Clearance Carried Out
+      detail: All items handled with care and a thorough valuables check completed.
+    - n: 5
+      label: Itemised Log Produced
+      detail: Detailed record of items removed provided for estate records.
+    - n: 6
+      label: Property Left Ready
+      detail: Empty and swept — ready for sale or legal handover.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — full estate clearances handled sensitively. We liaise directly
+        with solicitors, executors, and family representatives.
+    - btn: How Much?
+      answer: From £200 for partial clearances up to £950 for full estates. Itemised
+        documentation available for legal records.
+    - btn: When?
+      answer: We work within probate and court timelines. Often available within 48
+        hours of instruction. Call Mel to discuss.
+  sensitive_clearances:
+    variant: full
+    title: Sensitive Clearance Handling
+    intro: Probate clearances involve legal obligations and family sensitivities.
+      Mel works within estate and legal timelines with full documentation.
+    items:
+    - label: Solicitor & Executor Liaison
+      detail: Direct coordination with legal representatives throughout.
+    - label: Itemised Removal Log
+      detail: Detailed records provided for estate and legal documentation.
+    - label: Valuables & Document Check
+      detail: Thorough check before any items are disposed of.
+    - label: Remote Access Options
+      detail: Key collection and access via solicitor or representative arranged.
+    - label: Working to Legal Timelines
+      detail: Clearance scheduled around probate and court requirements.
+    - label: Consistent Team
+      detail: Same team throughout for continuity and trust.
+    footer: Full documentation provided for estate and legal records throughout.
+end_of_tenancy_clearance:
+  pricing:
+    intro: Fast, landlord-ready clearance. Flexible scheduling for tight turnaround
+      between tenancies.
+    tiers:
+    - label: Studio / One Bed
+      price: £150–£275
+      detail: Quick turnaround, minimal contents
+    - label: Two–Three Bed
+      price: £275–£450
+      detail: Full property clearance
+    - label: Large Property / HMO
+      price: £450–£600
+      detail: Multiple rooms, high volume
+    - label: Appliance & Furniture Only
+      price: £80–£200
+      detail: Selective removal of specified items
+    includes: Labour, loading, transport, disposal, and waste transfer documentation
+    footer: Flexible scheduling for landlords and letting agents. Call Mel for a fast
+      quote.
+    factors:
+    - icon: ⏱️
+      label: Turnaround Time
+      detail: Same-day and next-day slots often available
+    - icon: 📦
+      label: Volume Left Behind
+      detail: More contents left by tenants increases time and cost
+    - icon: 🚪
+      label: Access Arrangements
+      detail: Key handover and agent access easily accommodated
+    - icon: 🏠
+      label: Property Condition
+      detail: Heavily soiled properties may require additional handling
+  whats_included:
+    title: What's Included in an End of Tenancy Clearance
+    items:
+    - label: Full property clearance
+      detail: All rooms cleared of items left by tenants
+    - label: Appliance removal
+      detail: White goods and electrical items taken away
+    - label: Furniture and bulky item removal
+      detail: Sofas, beds, and large items removed efficiently
+    - label: Landlord-ready finish
+      detail: Property left empty and swept — ready for new tenants
+    - label: Flexible scheduling
+      detail: Same-day and next-day slots available for tight turnarounds
+    - label: Licensed waste disposal
+      detail: All items removed via authorised channels
+    - label: Waste transfer documentation
+      detail: Compliance paperwork provided on request
+    footer: Fast turnaround for landlords and letting agents. Key handover easily
+      accommodated.
+  faq:
+    items:
+    - q: How quickly can you clear a property?
+      a: Same-day and next-day slots are often available. Contact Mel to discuss your
+        specific turnaround requirement.
+    - q: Can landlords book directly without the tenant?
+      a: Yes — landlords and letting agents book directly. Key handover is easily
+        arranged.
+    - q: What condition will the property be left in?
+      a: Empty and swept through — ready for cleaning or new tenants to move in.
+    - q: Do you remove appliances left by tenants?
+      a: Yes — white goods and electrical items are removed and disposed of correctly.
+  process:
+    steps:
+    - n: 1
+      label: Same-Day Quote for Landlords
+      detail: Call Mel with the property details and contents left behind.
+    - n: 2
+      label: Fixed Price Confirmed
+      detail: Clear, no-obligation price provided quickly.
+    - n: 3
+      label: Key Handover Arranged
+      detail: Key collection from landlord, agent, or on-site contact.
+    - n: 4
+      label: Clearance Carried Out
+      detail: All items left by tenants removed efficiently.
+    - n: 5
+      label: Items Disposed Correctly
+      detail: Appliances, furniture, and waste removed via licensed channels.
+    - n: 6
+      label: Property Left Landlord-Ready
+      detail: Empty and swept — ready for cleaning or new tenants.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — full end of tenancy clearances for landlords, letting agents,
+        and tenants. Key handover easily arranged.
+    - btn: How Much?
+      answer: From £150 for a studio up to £600 for large properties or HMOs. Fast,
+        fixed-price quote for landlords and agents.
+    - btn: When?
+      answer: Same-day and next-day slots often available. Call Mel for fast turnaround
+        between tenancies.
+  sensitive_clearances:
+    variant: light
+    title: Sensitive Clearance Handling
+    intro: Some end of tenancy clearances involve difficult circumstances. Mel handles
+      every job professionally and discreetly.
+    items:
+    - label: Discretion
+      detail: All situations handled professionally regardless of circumstances.
+    - label: Flexible Access
+      detail: Key handover from landlord, agent, or on-site contact easily arranged.
+    - label: Fast Turnaround
+      detail: Same-day and next-day slots available to meet tight timelines.
+    - label: No Judgement
+      detail: Property condition and circumstances handled without comment.
+    footer: Professional and discreet service for landlords and letting agents.
+loft_clearance:
+  pricing:
+    intro: Specialist loft clearance including confined access and fragile item handling.
+      Priced by volume and access difficulty.
+    tiers:
+    - label: Light Loft — Few Items
+      price: £100–£200
+      detail: Partial clearance, good access
+    - label: Standard Loft
+      price: £200–£300
+      detail: Full loft, hatch access
+    - label: Large or Boarded Loft
+      price: £300–£400
+      detail: High volume, full clearance
+    - label: Difficult Access / Low Headroom
+      price: POA
+      detail: Non-standard access assessed individually
+    includes: Labour, careful extraction, transport, disposal, and waste transfer
+      documentation
+    footer: Loft access and volume assessed before pricing. Call Mel for a free quote.
+    factors:
+    - icon: 🪜
+      label: Access Difficulty
+      detail: Hatch size, ladder type, and headroom affect how items are extracted
+    - icon: 📦
+      label: Volume
+      detail: Fully packed lofts take significantly longer than light loads
+    - icon: 🏚️
+      label: Boarding & Insulation
+      detail: Working around boards and insulation requires care
+    - icon: 🖼️
+      label: Fragile Items
+      detail: Artwork, mirrors, and antiques handled with extra care
+  whats_included:
+    title: What's Included in a Loft Clearance
+    items:
+    - label: Safe extraction from confined spaces
+      detail: Items carefully removed through hatch and down stairs
+    - label: Fragile item handling
+      detail: Artwork, mirrors, antiques, and glassware handled with care
+    - label: Working around boarding and insulation
+      detail: Careful removal without damaging loft structure
+    - label: Sorting of contents
+      detail: Reusable and recyclable items separated where possible
+    - label: Licensed waste disposal
+      detail: All items removed via authorised channels
+    - label: Waste transfer documentation
+      detail: Compliance paperwork provided
+    - label: Loft left clear
+      detail: Space swept and left ready for new use
+    footer: Specialist loft access experience. No damage to ceilings, hatches, or
+      boarding.
+  faq:
+    items:
+    - q: How do you access difficult loft spaces?
+      a: We work with standard hatch access. Headroom, hatch size, and ladder type
+        are assessed before the clearance begins.
+    - q: Will you damage the ceiling or boarding?
+      a: No — we work carefully around existing boarding, insulation, and ceiling
+        joists throughout.
+    - q: Can you handle fragile or valuable items in the loft?
+      a: Yes — artwork, mirrors, antiques, and glassware are handled with extra care
+        and brought down safely.
+    - q: How long does a loft clearance take?
+      a: Light lofts can be cleared in a couple of hours. Fully packed or large lofts
+        may take half a day or more.
+  process:
+    steps:
+    - n: 1
+      label: Request a Loft Quote
+      detail: Call Mel with details of loft size, access type, and approximate contents.
+    - n: 2
+      label: Access Assessment
+      detail: Hatch size, headroom, and boarding assessed before price is confirmed.
+    - n: 3
+      label: Fixed Price Confirmed
+      detail: Clear, no-obligation price based on volume and access conditions.
+    - n: 4
+      label: Careful Extraction
+      detail: Items safely brought down through hatch without damage to ceiling or
+        boarding.
+    - n: 5
+      label: Items Sorted
+      detail: Reusable and recyclable items separated before disposal.
+    - n: 6
+      label: Loft Left Clear
+      detail: Space cleared and swept — ready for new use or boarding.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — loft clearances including confined access, low headroom, and fragile
+        or valuable items handled with care.
+    - btn: How Much?
+      answer: From £100 for a light loft up to £400 for large or fully packed spaces.
+        Access and volume assessed before pricing.
+    - btn: When?
+      answer: Often available within 48 hours. Call Mel for a free loft clearance
+        quote and to discuss access requirements.
+  sensitive_clearances:
+    variant: light
+    title: Sensitive Clearance Handling
+    intro: Loft clearances often uncover sentimental or valuable items. Mel handles
+      every find with care.
+    items:
+    - label: Fragile Item Handling
+      detail: Artwork, mirrors, antiques, and glassware handled with extra care.
+    - label: Valuables Check
+      detail: Items checked before disposal — nothing discarded without review.
+    - label: Sentimental Items
+      detail: Family photographs, documents, and keepsakes set aside for review.
+    - label: Care Throughout
+      detail: Every item treated respectfully from extraction to disposal.
+    footer: Nothing discarded without your knowledge. Full care throughout.
+garage_clearance:
+  pricing:
+    intro: Fast and efficient garage clearance. Hazardous materials including oils,
+      paints, and chemicals handled correctly.
+    tiers:
+    - label: Light Garage — Few Items
+      price: £80–£150
+      detail: Minimal contents, quick clearance
+    - label: Standard Single Garage
+      price: £150–£250
+      detail: Full clearance including shelving
+    - label: Large / Double Garage
+      price: £250–£350
+      detail: High volume, tools, and equipment
+    - label: Hazmat / Fluid Disposal
+      price: POA
+      detail: Oils, paints, chemicals assessed individually
+    includes: Labour, loading, transport, disposal including hazardous materials where
+      applicable, and waste transfer documentation
+    footer: Oils, paints, and chemicals disposed of correctly. Call Mel for a free
+      garage clearance quote.
+    factors:
+    - icon: 🧴
+      label: Hazardous Materials
+      detail: Oils, paints, and chemicals require specialist disposal
+    - icon: 🔧
+      label: Tools & Equipment
+      detail: Heavy or bulky tools and machinery affect time and handling
+    - icon: 📦
+      label: Volume
+      detail: Fully packed garages take longer than light loads
+    - icon: 🚗
+      label: Vehicle Parts
+      detail: Tyres, batteries, and parts need separate disposal streams
+  whats_included:
+    title: What's Included in a Garage Clearance
+    items:
+    - label: Full garage clearance
+      detail: Everything removed including shelving contents and floor items
+    - label: Tools and equipment removal
+      detail: Heavy or bulky tools and machinery handled correctly
+    - label: Hazardous material disposal
+      detail: Oils, paints, and chemicals disposed of via specialist streams
+    - label: Vehicle parts and tyres
+      detail: Tyres, batteries, and parts removed via correct disposal routes
+    - label: Sorting for reuse and recycling
+      detail: Usable items separated before disposal
+    - label: Licensed waste disposal
+      detail: All waste removed via authorised channels
+    - label: Garage left clear and swept
+      detail: Space ready for new use on completion
+    footer: Hazardous materials handled correctly. No oils, paints, or chemicals to
+      landfill.
+  faq:
+    items:
+    - q: Can you dispose of oils, paints, and chemicals?
+      a: Yes — hazardous materials including oils, paints, and chemicals are disposed
+        of via specialist waste streams, not landfill.
+    - q: Do you remove tyres and vehicle parts?
+      a: Yes — tyres, batteries, and vehicle parts are removed and disposed of via
+        the correct disposal routes.
+    - q: How long does a garage clearance take?
+      a: Most single garages are cleared within a couple of hours. Larger or fully
+        packed garages may take longer.
+    - q: Can you clear just part of a garage?
+      a: Yes — selective clearance of specific items or areas is available. Just let
+        Mel know what needs to go.
+  process:
+    steps:
+    - n: 1
+      label: Request a Garage Quote
+      detail: Call Mel with details of garage size and contents including any hazardous
+        materials.
+    - n: 2
+      label: Fixed Price Confirmed
+      detail: Clear, no-obligation price based on volume and disposal requirements.
+    - n: 3
+      label: Book a Date
+      detail: Often available same-day or next-day.
+    - n: 4
+      label: Clearance Carried Out
+      detail: Everything removed including tools, equipment, and hazardous materials.
+    - n: 5
+      label: Specialist Disposal
+      detail: Oils, paints, chemicals, and tyres disposed of via correct waste streams.
+    - n: 6
+      label: Garage Left Clear
+      detail: Empty and swept — ready for new use.
+  quick_qa:
+    cards:
+    - btn: Can You...?
+      answer: Yes — garages, outbuildings, and storage spaces of all sizes. Oils,
+        paints, chemicals, and tyres disposed of correctly.
+    - btn: How Much?
+      answer: From £80 for a light garage up to £350 for large or double garages.
+        Hazardous materials assessed individually.
+    - btn: When?
+      answer: Often available same-day or next-day. Call Mel for a fast, free garage
+        clearance quote.
+  sensitive_clearances:
+    variant: light
+    title: Sensitive Clearance Handling
+    intro: Garage clearances can involve hazardous materials and items requiring specialist
+      disposal. Mel handles everything correctly and safely.
+    items:
+    - label: Hazardous Material Safety
+      detail: Oils, paints, and chemicals handled and disposed of via specialist streams.
+    - label: Correct Disposal Routes
+      detail: Tyres, batteries, and vehicle parts removed via correct waste channels.
+    - label: No Landfill Shortcuts
+      detail: All hazardous materials disposed of correctly — never to general landfill.
+    - label: Documentation
+      detail: Waste transfer documentation provided for all specialist disposals.
+    footer: All hazardous materials handled safely and disposed of correctly.

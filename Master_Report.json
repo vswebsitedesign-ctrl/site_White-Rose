@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-31",
   "project_metadata": {
     "name": "White Rose House Clearance",
     "domain": "https://whiterosehouseclearance.co.uk",
     "project_root": "/home/chubert/omni-builder/sites/site_White-Rose",
     "tagline": "",
     "email": "",
-    "phone": "07931 476 744"
+    "phone": "07881 530 713"
   },
   "architecture_contract": {
     "source_of_truth": "data/pages.json",
@@ -77,6 +77,22 @@
         "body_content",
         "description",
         "tags"
+      ]
+    },
+    "jekyll_source_data": {
+      "locations_json_records": 539,
+      "service_types": 8,
+      "location_pages_per_service": 542,
+      "total_location_pages_in_jekyll": 4336,
+      "total_location_pages_in_omnibuilder": 8,
+      "migration_gap": 4328,
+      "data_files_recovered": [
+        "assets/data/locations.json",
+        "data/service_content.yml",
+        "data/locations.json",
+        "data/locations.yml",
+        "data/intro.yml",
+        "data/recent_jobs/8x yml files"
       ]
     }
   },
@@ -206,6 +222,30 @@
     {
       "date": "2026-05-25",
       "change": "Pushed to GitHub: remote set to https://github.com/vswebsitedesign-ctrl/site_White-Rose.git. GitHub Actions will now build on push."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "AUDIT: Phone corrected in project_metadata from 07931 476 744 to 07881 530 713 \u2014 confirmed against live site and pages.json."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "AUDIT: Full audit complete. Jekyll _site confirmed intact at /home/chubert/White-Rose with 4336 location pages (542 x 8 services) and 539-entry locations.json. omni-builder migration was incomplete \u2014 only 1 location per service was migrated."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "AUDIT: USB drives /media/c-h all empty \u2014 no backups available. Jekyll root is the sole recovery source."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "AUDIT: CSS confirmed absent from entire project \u2014 Jekyll compiled styles inline. Extracted from _site/index.html into assets/css/main.css."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "DATA RECOVERY: Copied missing data files into omni-builder: assets/data/locations.json (539 records), data/service_content.yml, data/locations.json, data/locations.yml, data/intro.yml, data/recent_jobs/ (8 service YML files)."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "AUDIT: Master_Report_Full_Audit.json read from Jekyll root \u2014 documents 13 batches, 53 findings, all critical issues resolved as of 2026-05-08 in the Jekyll project. This work is not yet reflected in omni-builder."
     }
   ],
   "known_issues": {
@@ -223,7 +263,10 @@
     "homepage_slug": "Engine builds index slug as build/index/index.html \u2014 must be manually copied to build/index.html after every build: cp build/index/index.html build/index.html",
     "base_html_jekyll_tags": "base.html may contain Jekyll tags (site.baseurl, site.title, prepend filters, block/endblock) the engine cannot process \u2014 audit base.html before first build and replace all with plain values or {{ content }}",
     "missing_js_assets": "cookieconsent.umd.js and cookie-init.js may be referenced in base.html but not exist in assets/js/ \u2014 check and remove missing JS references from base.html",
-    "head_styles_in_jekyll": "Some Jekyll pages store CSS in <head> <style> blocks \u2014 extractor must pull <style> block from <head> AND prepend to body content. Affects pages using custom layouts without <main> tags."
+    "head_styles_in_jekyll": "Some Jekyll pages store CSS in <head> <style> blocks \u2014 extractor must pull <style> block from <head> AND prepend to body content. Affects pages using custom layouts without <main> tags.",
+    "location_pages_not_migrated": "4328 of 4336 location pages not in pages.json \u2014 only aberford-ls25 per service was migrated. Full location page migration from _services/ required before omni-builder can replace Jekyll on live site.",
+    "css_was_inline_jekyll": "CSS was compiled inline by Jekyll \u2014 no standalone CSS files existed in the original project. Extracted from _site/index.html into assets/css/main.css. Verify all styles present before deploy.",
+    "service_content_yml_not_in_omnibuilder": "service_content.yml (8-service differentiated content), recent_jobs YML files, and locations data were absent from omni-builder until 2026-05-31 recovery. Now copied from Jekyll root."
   },
   "assets": {
     "images_migrated": true,
