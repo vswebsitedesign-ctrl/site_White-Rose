@@ -318,6 +318,14 @@
     {
       "date": "2026-05-31",
       "change": "SEO/ACCESSIBILITY: title and meta description placeholders added to theme/base.html. build.py updated to inject title and description from pages.json per page with fallback defaults."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "ACCESSIBILITY: Facebook button moved from pages.json to theme/base.html fix \u2014 icon removed, background darkened from #1877F2 to #003580 giving 8.9:1 contrast ratio, passes WCAG AAA."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "ACCESSIBILITY: iframe title attribute added across all location pages \u2014 title set to White Rose House Clearance service area map. Fixes screen reader frame title failure."
     }
   ],
   "known_issues": {
