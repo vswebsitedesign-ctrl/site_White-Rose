@@ -326,6 +326,14 @@
     {
       "date": "2026-05-31",
       "change": "ACCESSIBILITY: iframe title attribute added across all location pages \u2014 title set to White Rose House Clearance service area map. Fixes screen reader frame title failure."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "PERFORMANCE: LCP before image \u2014 loading=lazy removed, fetchpriority=high added across all 4312 location pages. Fixes LCP discovery and lazy-load penalty."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "PERFORMANCE: Google Maps iframe \u2014 loading=lazy added across all 4312 location pages. Defers 191KB unused JS until iframe is needed."
     }
   ],
   "known_issues": {
