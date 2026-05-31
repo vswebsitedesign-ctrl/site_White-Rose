@@ -310,6 +310,14 @@
     {
       "date": "2026-05-31",
       "change": "HERO: Overlay opacity reduced from rgba(0,0,0,0.6) to rgba(0,0,0,0.3) across all 4312 location pages \u2014 hero image was too dark."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "SEO: Meta descriptions rewritten for all 4312 location pages using locations.json data \u2014 unique per page using service name, location, postcode, region, suburbs, and first sentence of local_description. Trimmed to 160 chars for SERP. Pages no longer compete against one another."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "SEO/ACCESSIBILITY: title and meta description placeholders added to theme/base.html. build.py updated to inject title and description from pages.json per page with fallback defaults."
     }
   ],
   "known_issues": {

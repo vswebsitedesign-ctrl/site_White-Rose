@@ -16,14 +16,17 @@ def build():
     for page in pages:
         slug = page['slug']
         content = page.get('body_content', '')
+        title = page.get('title', 'White Rose House Clearance')
+        description = page.get('description', 'Professional house clearance across Yorkshire. Fully licensed, eco-friendly and compassionate. Free same-day quotes.')
         html = template.replace('{{ content }}', content)
+        html = html.replace('{{ title }}', title)
+        html = html.replace('{{ description }}', description)
         out_dir = os.path.join('build', slug) if slug else 'build'
         os.makedirs(out_dir, exist_ok=True)
         with open(os.path.join(out_dir, 'index.html'), 'w') as f:
             f.write(html)
     if os.path.exists('assets'):
         shutil.copytree('assets', 'build/assets', dirs_exist_ok=True)
-    # Copy server-side files to build root
     for f in ['.htaccess', 'robots.txt', 'send-quote.php']:
         src = os.path.join('assets', f)
         if os.path.exists(src):
