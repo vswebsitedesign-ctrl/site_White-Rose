@@ -302,6 +302,14 @@
     {
       "date": "2026-05-31",
       "change": "DEPLOY: deploy.yml updated from build-only to build-and-deploy via rsync over SSH. homepage cp step included in workflow. deploy_configured set to true."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "GALLERY: Before & After section replaced across all 4312 location pages. After image removed. New layout: before image left, two text boxes right (green bordered box + navy bullet box). Heading changed to What Mel and White Rose House Clearance Clears. Before image preserved dynamically per page from existing Jekyll-compiled content."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "HERO: Overlay opacity reduced from rgba(0,0,0,0.6) to rgba(0,0,0,0.3) across all 4312 location pages \u2014 hero image was too dark."
     }
   ],
   "known_issues": {
