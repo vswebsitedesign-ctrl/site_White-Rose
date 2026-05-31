@@ -258,6 +258,18 @@
     {
       "date": "2026-05-31",
       "change": "KNOWN ISSUE CONFIRMED: homepage_slug fix required after every build \u2014 cp build/index/index.html build/index.html"
+    },
+    {
+      "date": "2026-05-31",
+      "change": "CONTACT: Form rebuilt to match field names in send-quote.php exactly \u2014 first_name, surname, telephone, email, postcode, property_type, message, _honeypot. Type of Clearance dropdown added with all 8 service types."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "CONTACT: send-quote.php copied from Jekyll root into assets/ \u2014 build.py will copy it into build/ automatically on every build."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "CONTACT: Thank-you page confirmed built into send-quote.php itself \u2014 no separate thank-you slug required."
     }
   ],
   "known_issues": {
