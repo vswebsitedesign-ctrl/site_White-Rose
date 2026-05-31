@@ -1,24 +1,42 @@
-name: Build
+name: Build and Deploy to Plesk
+
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           lfs: true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
       - name: Build site
         run: python3 build.py
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-build
-          path: build/
+
+      - name: Copy homepage to root
+        run: cp build/index/index.html build/index.html 2>/dev/null || true
+
+      - name: Deploy via rsync
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ${{ vars.PLESK_DEPLOY_USER }}
+          REMOTE_HOST: ${{ vars.PLESK_HOST }}
+          REMOTE_PATH: ${{ vars.PLESK_HTTPDOCS_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $REMOTE_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
+          rsync -avz --delete \
+            --no-times --no-perms --no-owner --no-group \
+            build/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH/

@@ -290,6 +290,18 @@
     {
       "date": "2026-05-31",
       "change": "PENDING: Deployment workflow via GitHub Actions must be verified and if not present, set up. Current workflow is build-only (no rsync to Plesk). Required: SSH key, deploy user, rsync step to /var/www/vhosts/whiterosehouseclearance.co.uk/httpdocs/ on 217.154.45.205."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "DEPLOY: GitHub Actions deployment fully configured. SSH keypair generated (ed25519), deploybot user created on 217.154.45.205, public key added to server, vhost parent directory chmod o+x to allow traversal, httpdocs ownership set to deploybot."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "DEPLOY: GitHub secrets and variables set \u2014 SSH_PRIVATE_KEY (secret), PLESK_DEPLOY_USER=deploybot, PLESK_HOST=217.154.45.205, PLESK_HTTPDOCS_PATH=/var/www/vhosts/whiterosehouseclearance.co.uk/httpdocs."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "DEPLOY: deploy.yml updated from build-only to build-and-deploy via rsync over SSH. homepage cp step included in workflow. deploy_configured set to true."
     }
   ],
   "known_issues": {
@@ -331,17 +343,17 @@
     "server": "217.154.45.205",
     "domain": "whiterosehouseclearance.co.uk",
     "plesk_path": "/var/www/vhosts/whiterosehouseclearance.co.uk/httpdocs/",
-    "deploy_user": "root",
+    "deploy_user": "deploybot",
     "github_actions_status": "build-only workflow \u2013 ready, runs on push",
     "workflow_file": ".github/workflows/deploy.yml",
     "notes": "Deployment to Plesk not configured; artifact uploads build/",
     "git_initialized": true,
     "git_remote": "https://github.com/vswebsitedesign-ctrl/site_White-Rose.git",
     "server_ip": "NOT YET CONFIGURED",
-    "deploy_configured": false,
-    "deploy_status": "PENDING \u2014 GitHub Actions workflow is build-only. Rsync to Plesk not configured. Must be set up before omni-builder can go live.",
+    "deploy_configured": true,
+    "deploy_status": "LIVE \u2014 rsync to Plesk via GitHub Actions on every push to main.",
     "recommended_method": "GitHub Actions + rsync over SSH as Plesk domain system user (not root) \u2014 see site_JKRS deploy.yml as reference implementation",
-    "pending_action": "Verify deploy.yml has rsync step. If not, add SSH key as GitHub secret, add deploy user to Plesk, add rsync step to .github/workflows/deploy.yml targeting /var/www/vhosts/whiterosehouseclearance.co.uk/httpdocs/ on 217.154.45.205."
+    "pending_action": "None"
   },
   "content_status": {
     "pages_built": "4353 \u2014 all location pages migrated",
