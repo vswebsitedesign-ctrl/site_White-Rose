@@ -334,6 +334,10 @@
     {
       "date": "2026-05-31",
       "change": "PERFORMANCE: Google Maps iframe \u2014 loading=lazy added across all 4312 location pages. Defers 191KB unused JS until iframe is needed."
+    },
+    {
+      "date": "2026-05-31",
+      "change": "MILESTONE: Google PageSpeed Insights \u2014 100/100/100/100 Performance, Accessibility, Best Practices, SEO on mobile. Achieved 2026-05-31."
     }
   ],
   "known_issues": {
